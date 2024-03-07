@@ -1,0 +1,33 @@
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 50px;
+    color: crimson;
+    text-decoration: underline;
+}
+
+p {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: unset;
+    font-size: 20px;
+
+}
+
+/* .segundo_paragrafo{
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+
+}
+.terceiro_paragrafo{
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+} */
