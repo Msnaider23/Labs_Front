@@ -1,9 +1,16 @@
+:root{
+    --cor-base: #0546d1;
+    --cor-base-h2: #0c0c0c;
+    --cor-fundo-img: #c0bbbb;
+    --cor-borda-img: #0c0c0c;
+}
 body {
-    color: #333333;
+    color:var(--cor-base);
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
 }
 
 h1 {
@@ -11,13 +18,16 @@ h1 {
 }
 
 h2 {
-    border-bottom: 2px groove #333333;
-}
+    border-bottom: 2px groove var(--cor-base-h2);
+
+}   
 
 figure {
-    background-color: #F2EDED;
-    border: 1px solid #ccc;
+    background-color: var(--cor-fundo-img);
+    border: 1px solid var(--cor-borda-img);
     text-align: center;
+    
+   
 }
 
 figcaption {
