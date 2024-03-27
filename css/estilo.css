@@ -15,3 +15,28 @@ p{
     color: var(--cor-destaque);
     background-color: var(--cor-fundo-destaque);
 }
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+}
+.sacola{
+    background: url(../img/sacola.png) no-repeat top right;
+
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+}
+.menu-opcoes ul {
+    font-size: 15px;
+}
+.menu-opcoes a{
+    color: #003366;
+}
+body{
+    color: #333333;
+    font-family:  "Oswald", sans-serif;;
+}
