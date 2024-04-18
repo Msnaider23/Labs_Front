@@ -1,0 +1,53 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+body {
+    width: 60%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+fieldset {
+    margin-bottom: 30px;
+    background-color: papayawhip;
+    border-radius: 5px;
+}
+fieldset input,select {
+    font-size: medium;
+}
+fieldset legend {
+    font-weight: bold;
+}
+.grid-buttom-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5px 0;
+}
+.grid-buttom-container input {
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.grid-buttom-container input[type=submit] {
+    background-color: blue;
+}
+.grid-buttom-container input[type=reset] {
+    background-color: red;
+}
+.grid-header-container {
+    display: grid;
+    grid-template-areas: 'top-left top-right';
+    border-bottom: 5px solid rgb(241, 185, 95);
+    margin-bottom: 5px;
+} 
+.top-right {
+    grid-area: top-right;
+    justify-self: right;
+}
+.top-left {
+    grid-area: top-left;
+}
