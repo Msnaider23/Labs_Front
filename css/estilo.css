@@ -1,61 +1,145 @@
+:root {
+    --cor-primaria: #575757;
+    --cor-secundaria: #868686;
+    --cor-destaque: #f47fc1;
+    --cor-de-fundo: #91c1fc;
+    --azul-escuro-link: #003366;
+    --cor-body: #333;
+    --fonte-texto: "Jura", sans-serif;
+    --fonte-titulo: "Roboto Mono", monospace;
 
-:root{
-    --cor-primaria: #005eaa;
-    --cor-secundaria: #020202;
-    --cor-destaque: #0439aa;
-    --cor-fundo-destaque: #b3afaf;
-}
-h1{
-    color: var(--cor-primaria);
-}
-h2{
-    color: var(--cor-secundaria);
-}
-p{
-    color: var(--cor-destaque);
-    background-color: var(--cor-fundo-destaque);
+    --cor-menu-lateral: #dcdcdc;
 }
 
-div{
-    width: 100px;
-    height: 100px;
-    border: 1px solid #000;
-    margin-bottom: 5px;
+body {
+    color: var(--cor-body);
+    font-family: var(--fonte-texto);
 }
-.sacola{
-    background: url(../img/sacola.png) no-repeat top right;
-
+.sacola {
+    background: url(/img/sacola.png) no-repeat top right;
     font-size: 14px;
     padding-right: 35px;
     padding-top: 8px;
     text-align: right;
     width: 140px;
+    padding-top: 8px;
     position: absolute;
     top: 0;
     right: 0;
 }
+
+header {
+    position: relative;
+}
+
 .menu-opcoes {
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
+}
+
+.menu-opcoes ul {
+    font-size: 15px;
 }
 
 .menu-opcoes ul li {
     display: inline;
     margin-left: 20px;
 }
-.menu-opcoes a{
-    color: #003366;
-}
-body{
-    color: #333333;
-    font-family:  "Roboto", sans-serif;
-}
-.container {
-    margin: 0 auto; 
-    width: 90%;
-}
-header{
-    position: relative;
 
+.menu-opcoes a {
+    color: var(--azul-escuro-link)
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    /* border: 1px solid red; */
+}
+
+.busca,
+.menu-departamentos {
+    background-color: var(--cor-menu-lateral);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.menu-departamentos a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.busca- input[type=search] {
+    width: 170px;
+    vertical-align: middle;
+}
+
+.menu-departamentos {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    clear: left;
+}
+
+.destaque {
+    margin-top: 10px;
+}
+
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+}
+
+.novidades {
+    float: left;
+}
+
+.mais-vendidos {
+    float: right;
+}
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novidades {
+    background-color: #f5dcdc;
+}
+
+.mais-vendidos {
+    background-color: #dcdcf5;
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
 }
