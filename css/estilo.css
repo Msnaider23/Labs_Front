@@ -7,6 +7,10 @@
     --cor-body: #333;
     --fonte-texto: "Jura", sans-serif;
     --fonte-titulo: "Roboto Mono", monospace;
+    --cor-painel-novidades: #f5dcdc;
+    --cor-painel-mais-novidades: #dcdcf5;
+    --cor-painel-novidades-gradient: #bebef4;
+    --cor-painel-mais-novidades-gradient: #f4bebe;
 
     --cor-menu-lateral: #dcdcdc;
 }
@@ -53,7 +57,7 @@ header {
 
 .container {
     margin: 0 auto;
-    width: 90%;
+    width: 940px;
     /* border: 1px solid red; */
 }
 
@@ -119,6 +123,9 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px;
+    opacity: 0.30 black;
+
 }
 
 .painel a {
@@ -129,17 +136,72 @@ header {
 }
 
 .novidades {
-    background-color: #f5dcdc;
+    background-image: linear-gradient(var(--cor-painel-novidades),var(--cor-painel-novidades-gradient));
 }
 
 .mais-vendidos {
-    background-color: #dcdcf5;
+    background-image: linear-gradient(var(--cor-painel-mais-novidades),var(--cor-painel-mais-novidades-gradient));
 }
 
 .painel li {
     display: inline-block;
     vertical-align: top;
-    width: 140px;
+    width: 130px;
     margin: 2px;
     padding-bottom: 10px;
+}
+.novidades {
+    background-color: var(--cor-painel-novidades);
+  
+}
+.mais-vendidos {
+    background-color: var(--cor-painel-mais-novidades);
+  
+}
+.footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+    position: relative;
+}
+.social a {
+    height: 32px;
+    width: 32px;
+    display:block;
+    text-indent: -9999px;  
+}
+.social a[href*="google+.com"] {
+    background-image: url(../img/googleplus.png);
+}
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+.menu-opcoes a:hover{
+    color: #007dc6;
+}
+.menu-opcoes a:active{
+    color: red;
+}
+.menu-departamentos li ul{
+    display: none;
+}
+.menu-departamentos li:hover ul{
+    display: block;
+}
+.menu-departamentos ul ul li{
+    background-color: #dcdcdc;
+}
+.menu-departamentos li li a:before{
+    content: '- ';
+}
+.painel {
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px red;
 }
