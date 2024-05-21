@@ -149,6 +149,7 @@ header {
     width: 130px;
     margin: 2px;
     padding-bottom: 10px;
+    transition: 0.7s ease-out;
 }
 .novidades {
     background-color: var(--cor-painel-novidades);
@@ -204,4 +205,13 @@ header {
 .painel {
     border-radius: 4px;
     box-shadow: inset 1px 1px 4px red;
+}
+.painel li:hover {
+    box-shadow:  10px 10px;
+    transition: 1s ease-in;
+    transform: scale(1.2) rotate(-5deg);
+    background-color: white;
+}
+.painel li:nth-child(2n):hover{
+    transform: scale(1.2) rotate(5deg);
 }
