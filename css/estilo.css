@@ -159,31 +159,43 @@ header {
     background-color: var(--cor-painel-mais-novidades);
   
 }
-.footer {
+footer {
     background-image: url(../img/fundo-rodape.png);
     clear: both;
     padding: 20px 0;
     position: relative;
 }
-.social a {
+.social a { 
     height: 32px;
     width: 32px;
-    display:block;
-    text-indent: -9999px;  
+    display: block;
+    text-indent: -9999px;
 }
-.social a[href*="google+.com"] {
-    background-image: url(../img/googleplus.png);
-}
+ 
 .social a[href*="facebook.com"] {
     background-image: url(../img/facebook.png);
 }
+ 
 .social a[href*="twitter.com"] {
     background-image: url(../img/twitter.png);
 }
+ 
+.social a[href*="googleplus.com"] {
+    background-image: url(../img/google+.png);
+}
+ 
 .social li {
     float: left;
     margin-left: 25px;
 }
+ 
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+tem menu de contexto
+
 .menu-opcoes a:hover{
     color: #007dc6;
 }
